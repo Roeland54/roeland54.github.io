@@ -14,16 +14,15 @@ timezone: Europe/Brussels
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: r54.be # the main title
+title: HomeBits # the main title
 
-tagline: Random stuf I want to document publicly # the tagline below the title
+tagline: Some posts about home automation and homelab # the tagline below the title
 
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+description:  # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://roeland54.github.io"
+url: "https://roeland54.github.io" # the base hostname & protocol for your site
 
 github:
   username: roeland54 # change to your github username
@@ -73,7 +72,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /assets/lib/homebits-logo.jpg # the avatar on sidebar
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
