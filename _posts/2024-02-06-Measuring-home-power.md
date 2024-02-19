@@ -39,17 +39,17 @@ Wiring a meter like this has some downsides:
 
 ## SPM02
 
-![Alt text](../assets/img/posts/2024-02-06-measuring-home-power/spm02_product.png)
+![Alt text](/assets/img/posts/2024-02-06-measuring-home-power/spm02_product.png)
 
 The first option I have tested is the zigbee SPM02 meter. This meter is also available in wifi variant, has a small from factor that fits above or below the circuit breaker. Zigbee2Mqtt has native support for this meter. The ZHA support is still in [progress](https://github.com/zigpy/zha-device-handlers/pull/2603) a.t.m. You can make it work with code changes but it is a hassle.
 
 When wiring this meter you need to disconnect the wires from the breaker and wire them through the meter. 
 
-![Alt text](../assets/img/posts/2024-02-06-measuring-home-power/spm02_wiring.jpg)
+![Alt text](/assets/img/posts/2024-02-06-measuring-home-power/spm02_wiring.jpg)
 
 For the delta wiring I have connected the N and the Y wire together.
 
-![Alt text](../assets/img/posts/2024-02-06-measuring-home-power/ha-values-spm02.png){: w="250" h="400" .right}
+![Alt text](/assets/img/posts/2024-02-06-measuring-home-power/ha-values-spm02.png){: w="250" h="400" .right}
 
 In home assistant(using zha) we get measurements that look like this:
 
@@ -59,10 +59,10 @@ The energy and produced energy do produce usable kWh measurements, That are usab
 
 ## Shelly Pro 3EM
 
-![Alt text](../assets/img/posts/2024-02-06-measuring-home-power/measuring_shelly3em_tumbnail.webp)
+![Alt text](/assets/img/posts/2024-02-06-measuring-home-power/measuring_shelly3em_tumbnail.webp)
 
 I used the SPM02 for a few months and it did a good job, But I was looking for a meter with modbus support so I changed it to the Shelly PRO 3EM.
 
-![Alt text](../assets/img/posts/2024-02-06-measuring-home-power/Pro-3EM-wiring-diagram.png)
+![Alt text](/assets/img/posts/2024-02-06-measuring-home-power/Pro-3EM-wiring-diagram.png)
 
 So here I also just wired phase B to the N connection. The wiring diagram shows phase C is used for the power to the device.
